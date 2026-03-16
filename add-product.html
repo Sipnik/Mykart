@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Add Product</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link" href="admin.html#dashboard">Dashboard</a>
+          <div class="admin-menu-group is-open" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle is-active" type="button" data-menu-trigger aria-expanded="true">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link is-active" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="banner.html">Banner</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Publishing flow</span>
+          <strong>Create and save inventory</strong>
+          <p class="muted">Add a product here, then review it back in the main dashboard inventory table.</p>
+          <a class="button" href="inventory.html">Open Inventory</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar">
+          <div>
+            <span class="eyebrow">Add product</span>
+            <h1 class="page-title">Create a new product listing.</h1>
+            <p class="lead">Use this page to add a new item with pricing, tag, image, and category information. Saved products are stored in your browser for now.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button-ghost" href="admin.html">Back to Dashboard</a>
+          </div>
+        </header>
+
+        <div class="admin-layout">
+          <section class="account-card account-surface" id="add-product">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">Product form</span>
+                <h2>Add a new product</h2>
+              </div>
+            </div>
+
+            <form class="form-grid" data-admin-form>
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Product name</label>
+                  <input type="text" name="name" placeholder="Arc Leather Tote" required>
+                </div>
+                <div class="field-group">
+                  <label>Category</label>
+                  <select name="category" required>
+                    <option value="Women">Women</option>
+                    <option value="Men">Men</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Footwear">Footwear</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Sale price</label>
+                  <input type="text" name="price" placeholder="$124" required>
+                </div>
+                <div class="field-group">
+                  <label>Old price</label>
+                  <input type="text" name="oldPrice" placeholder="$156">
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Rating</label>
+                  <input type="text" name="rating" placeholder="4.9">
+                </div>
+                <div class="field-group">
+                  <label>Tag</label>
+                  <input type="text" name="tag" placeholder="Top pick">
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Image URL</label>
+                  <input type="url" name="image" placeholder="https://images.unsplash.com/...">
+                </div>
+                <div class="field-group">
+                  <label>Upload product image</label>
+                  <input type="file" name="imageFile" accept="image/*">
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Featured</label>
+                  <select name="featured">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="option-builder" id="variation-section">
+                <div class="row-between">
+                  <div>
+                    <strong>Variation</strong>
+                    <p class="muted">Add generic variation labels like Material, Style, or Edition.</p>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-add-option="variation">Add Variation</button>
+                </div>
+                <div class="option-list" data-option-list="variation"></div>
+              </div>
+
+              <div class="option-builder" id="size-section">
+                <div class="row-between">
+                  <div>
+                    <strong>Size</strong>
+                    <p class="muted">Add size options like S, M, L, XL or numeric sizes.</p>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-add-option="size">Add Size</button>
+                </div>
+                <div class="option-list" data-option-list="size"></div>
+              </div>
+
+              <div class="option-builder" id="color-section">
+                <div class="row-between">
+                  <div>
+                    <strong>Color</strong>
+                    <p class="muted">Add product colors with optional stock and price differences.</p>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-add-option="color">Add Color</button>
+                </div>
+                <div class="option-list" data-option-list="color"></div>
+              </div>
+
+              <div class="option-builder" id="brand-section">
+                <div class="row-between">
+                  <div>
+                    <strong>Brand</strong>
+                    <p class="muted">Add one or more brand options when needed for catalog organization.</p>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-add-option="brand">Add Brand</button>
+                </div>
+                <div class="option-list" data-option-list="brand"></div>
+              </div>
+
+              <div class="field-group">
+                <label>Description</label>
+                <input type="text" name="description" placeholder="Soft structure, reinforced straps, and an everyday luxury finish.">
+              </div>
+
+              <div class="hero-actions">
+                <button class="button" type="submit">Save Product</button>
+                <button class="button-ghost" type="reset">Reset</button>
+              </div>
+              <p class="muted" data-admin-message></p>
+            </form>
+          </section>
+
+          <aside class="account-sidebar">
+            <div class="account-card account-surface">
+              <h3>Publishing tips</h3>
+              <div class="account-mini-stack">
+                <div class="mini-card">
+                  <strong>Best images</strong>
+                  <p class="muted">Use clear portrait product images for better storefront cards.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Pricing</strong>
+                  <p class="muted">Add both sale and old price to create stronger offer visuals.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="account-card account-surface">
+              <h3>Quick actions</h3>
+              <div class="account-mini-stack">
+                <a class="pill-link" href="inventory.html">View Inventory</a>
+                <a class="pill-link" href="index.html">Preview Storefront</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

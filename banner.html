@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Banner Manager</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link" href="admin.html#dashboard">Dashboard</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link is-active" href="banner.html">Banner</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Banner manager</span>
+          <strong>Create homepage story banners</strong>
+          <p class="muted">Add premium slider banners with title, button text, and image URL for your storefront hero.</p>
+          <a class="button" href="index.html">Preview Store</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar">
+          <div>
+            <span class="eyebrow">Banner manager</span>
+            <h1 class="page-title">Create and organize homepage banners.</h1>
+            <p class="lead">Upload banner image links, write hero copy, and build a polished slider set for the home page.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button-ghost" href="admin.html">Back to Dashboard</a>
+          </div>
+        </header>
+
+        <section class="admin-stats">
+          <div class="account-stat-card">
+            <span class="muted">Total banners</span>
+            <strong data-banner-count>0</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Active</span>
+            <strong data-banner-active-count>0</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Primary CTA</span>
+            <strong data-banner-primary-cta>Shop Now</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Format</span>
+            <strong>Slider</strong>
+          </div>
+        </section>
+
+        <section class="settings-workspace">
+          <div class="settings-form-column">
+            <section class="account-card account-surface">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Create banner</span>
+                  <h2>Add a new hero banner</h2>
+                </div>
+              </div>
+              <form class="form-grid" data-banner-form>
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Kicker</label>
+                    <input type="text" name="kicker" placeholder="New collection" required>
+                  </div>
+                  <div class="field-group">
+                    <label>Status</label>
+                    <select name="status">
+                      <option value="Active">Active</option>
+                      <option value="Draft">Draft</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label>Banner heading</label>
+                  <input type="text" name="title" placeholder="Seasonal moments with a modern edge." required>
+                </div>
+
+                <div class="field-group">
+                  <label>Banner description</label>
+                  <input type="text" name="description" placeholder="Elevated staples, rich textures, and editorial styling for every day.">
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Primary button text</label>
+                    <input type="text" name="primaryCta" placeholder="Shop Collection">
+                  </div>
+                  <div class="field-group">
+                    <label>Secondary button text</label>
+                    <input type="text" name="secondaryCta" placeholder="View Account">
+                  </div>
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Banner image URL</label>
+                    <input type="url" name="image" placeholder="https://images.unsplash.com/...">
+                  </div>
+                  <div class="field-group">
+                    <label>Upload banner image</label>
+                    <input type="file" name="imageFile" accept="image/*">
+                  </div>
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Display order</label>
+                    <input type="number" name="sortOrder" min="1" placeholder="1">
+                  </div>
+                </div>
+
+                <div class="hero-actions">
+                  <button class="button" type="submit">Save Banner</button>
+                  <button class="button-ghost" type="reset">Reset</button>
+                </div>
+                <p class="muted" data-banner-message></p>
+              </form>
+            </section>
+
+            <section class="account-card account-surface">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Upload tips</span>
+                  <h2>Banner image guidelines</h2>
+                </div>
+              </div>
+              <div class="account-mini-stack">
+                <div class="mini-card">
+                  <strong>Best size</strong>
+                  <p class="muted">Use a wide desktop image, ideally 1600px or wider for a crisp hero section.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Copy length</strong>
+                  <p class="muted">Keep headings short and strong so the slider feels editorial and premium.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="settings-preview-column">
+            <section class="settings-preview-card">
+              <span class="eyebrow">Live preview</span>
+              <h2 data-banner-preview-title>Seasonal moments with a modern edge.</h2>
+              <p class="lead" data-banner-preview-copy>Elevated staples, rich textures, and editorial styling for every day.</p>
+              <div class="hero-actions">
+                <span class="button" data-banner-preview-primary>Shop Collection</span>
+                <span class="button-ghost" data-banner-preview-secondary>View Account</span>
+              </div>
+              <div class="mini-card">
+                <strong>Banner image</strong>
+                <img class="admin-product-thumb" data-banner-preview-media src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Banner preview">
+                <p class="muted" data-banner-preview-image>https://images.unsplash.com/...</p>
+              </div>
+            </section>
+
+            <section class="account-card account-surface variation-preset-card">
+              <div class="row-between">
+                <div>
+                  <span class="eyebrow">Created banners</span>
+                  <h2>Saved banner slides</h2>
+                </div>
+              </div>
+              <div class="preset-list" data-banner-list></div>
+            </section>
+          </aside>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

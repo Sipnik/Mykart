@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Cart</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura</strong>
+            <span>Curated essentials for elevated living</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a class="is-active" href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="pill-link" href="account.html">My Account</a>
+          <a class="button" href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">Shopping cart</span>
+            <h1 class="page-title">Your selected pieces</h1>
+          </div>
+          <p class="lead">Review your items, adjust quantities, and continue to checkout.</p>
+        </div>
+
+        <div class="cart-layout">
+          <div class="cart-stack">
+            <article class="cart-item">
+              <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=80" alt="Wool coat">
+              <div class="cart-item-body">
+                <div class="row-between">
+                  <div>
+                    <h3>Contour Wool Coat</h3>
+                    <p class="muted">Color: Sand | Size: M</p>
+                  </div>
+                  <span class="price">$188.00</span>
+                </div>
+                <p class="muted">Tailored warmth with a soft brushed texture and clean, structured profile.</p>
+                <div class="row-between">
+                  <div class="qty-control" data-qty>
+                    <button type="button" data-action="decrease">-</button>
+                    <span data-qty-value>1</span>
+                    <button type="button" data-action="increase">+</button>
+                  </div>
+                  <a class="pill-link" href="#">Remove</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80" alt="Sneaker">
+              <div class="cart-item-body">
+                <div class="row-between">
+                  <div>
+                    <h3>Cloudline Sneaker</h3>
+                    <p class="muted">Color: Bone | Size: 42</p>
+                  </div>
+                  <span class="price">$96.00</span>
+                </div>
+                <p class="muted">Breathable fit, plush sole, and a neutral finish that pairs effortlessly.</p>
+                <div class="row-between">
+                  <div class="qty-control" data-qty>
+                    <button type="button" data-action="decrease">-</button>
+                    <span data-qty-value>1</span>
+                    <button type="button" data-action="increase">+</button>
+                  </div>
+                  <a class="pill-link" href="#">Remove</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="summary-card">
+            <h2>Order summary</h2>
+            <ul class="list-reset">
+              <li class="row-between"><span class="muted">Subtotal</span><strong>$284.00</strong></li>
+              <li class="row-between"><span class="muted">Shipping</span><strong>$12.00</strong></li>
+              <li class="row-between"><span class="muted">Tax</span><strong>$14.50</strong></li>
+              <li class="row-between"><span class="muted">Discount</span><strong>-$20.00</strong></li>
+            </ul>
+            <hr>
+            <div class="row-between">
+              <strong>Total</strong>
+              <strong>$290.50</strong>
+            </div>
+            <div class="field-group" style="margin-top:1rem;">
+              <label>Promo code</label>
+              <input type="text" placeholder="VELVET20">
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="checkout.html">Proceed to Checkout</a>
+              <a class="button-ghost" href="product.html">Continue Shopping</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-card">
+        <div>
+          <strong>Secure checkout</strong>
+          <p class="muted">Visa, Mastercard, PayPal, and cash on delivery ready in UI.</p>
+        </div>
+        <div class="footer-links">
+          <a href="checkout.html">Checkout</a>
+          <a href="account.html">Account</a>
+          <span>© <span data-year></span></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

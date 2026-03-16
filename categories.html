@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Categories</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link" href="admin.html#dashboard">Dashboard</a>
+          <div class="admin-menu-group is-open" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle is-active" type="button" data-menu-trigger aria-expanded="true">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link is-active" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="banner.html">Banner</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Category manager</span>
+          <strong>Create reusable storefront categories</strong>
+          <p class="muted">Build and manage product categories from one dedicated admin page.</p>
+          <a class="button" href="add-product.html">Go to Add Product</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar">
+          <div>
+            <span class="eyebrow">Category manager</span>
+            <h1 class="page-title">Create and organize product categories.</h1>
+            <p class="lead">Use categories to structure products, simplify discovery, and keep the storefront easier to manage.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button-ghost" href="admin.html">Back to Dashboard</a>
+          </div>
+        </header>
+
+        <section class="attributes-workspace">
+          <div class="attributes-create-column">
+            <section class="variation-summary-card">
+              <span class="eyebrow">Create category</span>
+              <h2 class="attributes-section-title">Add a new category.</h2>
+              <p class="lead">Create reusable categories like Women, Men, Accessories, Beauty, or Home.</p>
+              <form class="form-grid" data-category-form>
+                <div class="field-group">
+                  <label>Category name</label>
+                  <input type="text" name="name" placeholder="Women" required>
+                </div>
+                <div class="field-group">
+                  <label>Parent category</label>
+                  <select name="parentId" data-category-parent>
+                    <option value="">No parent category</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Description</label>
+                  <input type="text" name="description" placeholder="Premium wardrobe staples and modern fashion.">
+                </div>
+                <div class="hero-actions">
+                  <button class="button" type="submit">Save Category</button>
+                </div>
+                <p class="muted" data-category-message></p>
+              </form>
+            </section>
+
+            <section class="variation-summary-card">
+              <span class="eyebrow">Feature guide</span>
+              <div class="variation-guide-list">
+                <div class="mini-card">
+                  <strong>Good category names</strong>
+                  <p class="muted">Use short, recognizable labels that customers understand immediately.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Use consistently</strong>
+                  <p class="muted">Reuse categories across products to keep the storefront tidy and searchable.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="attributes-results-column">
+            <section class="variation-summary-card">
+              <span class="eyebrow">Category totals</span>
+              <div class="admin-stats variation-stats-compact">
+                <div class="account-stat-card">
+                  <span class="muted">Categories</span>
+                  <strong data-category-count>0</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="account-card account-surface variation-preset-card">
+              <div class="row-between">
+                <div>
+                  <span class="eyebrow">Created categories</span>
+                  <h2>Saved categories</h2>
+                </div>
+              </div>
+              <div class="preset-list" data-category-list></div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

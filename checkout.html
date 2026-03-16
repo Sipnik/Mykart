@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Checkout</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura</strong>
+            <span>Curated essentials for elevated living</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="cart.html">Cart</a>
+          <a class="is-active" href="checkout.html">Checkout</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="pill-link" href="cart.html">Back to Cart</a>
+          <a class="button" href="account.html">My Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">Checkout page</span>
+            <h1 class="page-title">Finish your order</h1>
+          </div>
+          <p class="lead">A simple, premium checkout flow built for trust and clarity.</p>
+        </div>
+
+        <div class="checkout-layout">
+          <section class="checkout-card">
+            <div class="form-grid">
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>First name</label>
+                  <input type="text" placeholder="Manisha">
+                </div>
+                <div class="field-group">
+                  <label>Last name</label>
+                  <input type="text" placeholder="Sharma">
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label>Email address</label>
+                <input type="email" placeholder="hello@example.com">
+              </div>
+
+              <div class="field-group">
+                <label>Street address</label>
+                <input type="text" placeholder="123 Main Street">
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>City</label>
+                  <input type="text" placeholder="Kolkata">
+                </div>
+                <div class="field-group">
+                  <label>Postal code</label>
+                  <input type="text" placeholder="700001">
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Country</label>
+                  <select>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Payment method</label>
+                  <select>
+                    <option>Credit Card</option>
+                    <option>PayPal</option>
+                    <option>Cash on Delivery</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="payment-grid">
+                <div class="field-group">
+                  <label>Card number</label>
+                  <input type="text" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="field-group">
+                  <label>Name on card</label>
+                  <input type="text" placeholder="Manisha Sharma">
+                </div>
+              </div>
+
+              <div class="checkout-grid">
+                <div class="field-group">
+                  <label>Expiry</label>
+                  <input type="text" placeholder="09/28">
+                </div>
+                <div class="field-group">
+                  <label>CVV</label>
+                  <input type="text" placeholder="123">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="summary-card">
+            <h2>Review</h2>
+            <div class="status-card">
+              <div class="row-between">
+                <div>
+                  <strong>Contour Wool Coat</strong>
+                  <p class="muted">Qty 1</p>
+                </div>
+                <span>$188.00</span>
+              </div>
+            </div>
+            <div class="status-card" style="margin-top:1rem;">
+              <div class="row-between">
+                <div>
+                  <strong>Cloudline Sneaker</strong>
+                  <p class="muted">Qty 1</p>
+                </div>
+                <span>$96.00</span>
+              </div>
+            </div>
+            <ul class="list-reset" style="margin-top:1rem;">
+              <li class="row-between"><span class="muted">Subtotal</span><strong>$284.00</strong></li>
+              <li class="row-between"><span class="muted">Shipping</span><strong>$12.00</strong></li>
+              <li class="row-between"><span class="muted">Tax</span><strong>$14.50</strong></li>
+            </ul>
+            <hr>
+            <div class="row-between">
+              <strong>Total</strong>
+              <strong>$310.50</strong>
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="#">Place Order</a>
+            </div>
+            <p class="muted">You can connect this layout to a PHP checkout handler or payment gateway later.</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-card">
+        <div>
+          <strong>Deployment ready</strong>
+          <p class="muted">These pages are static HTML, CSS, and JS for straightforward cPanel hosting.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Account</a>
+          <span>© <span data-year></span></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

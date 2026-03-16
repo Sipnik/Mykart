@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Admin Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link is-active" href="#dashboard">Dashboard</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="banner.html">Banner</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Store status</span>
+          <strong>Live on cPanel</strong>
+          <p class="muted">You can keep using this panel for demo management until you connect a real backend.</p>
+          <a class="button" href="index.html">Preview Store</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar" id="dashboard">
+          <div>
+            <span class="eyebrow">Admin dashboard</span>
+            <h1 class="page-title">Manage products beautifully.</h1>
+            <p class="lead">A cleaner admin panel with a sidebar menu, product form, and inventory overview for your ecommerce storefront.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button" href="add-product.html">Add Product</a>
+            <a class="button-ghost" href="inventory.html">View Inventory</a>
+          </div>
+        </header>
+
+        <section class="admin-stats">
+          <div class="account-stat-card">
+            <span class="muted">Products</span>
+            <strong data-admin-product-count>0</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Featured</span>
+            <strong data-admin-featured-count>0</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Categories</span>
+            <strong data-admin-category-count>0</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Mode</span>
+            <strong>Static</strong>
+          </div>
+        </section>
+
+        <section class="account-card account-surface" id="analytics">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Store analytics</span>
+              <h2>Performance overview</h2>
+            </div>
+          </div>
+          <div class="admin-stats">
+            <div class="account-stat-card">
+              <span class="muted">Revenue</span>
+              <strong>$18.4k</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">Orders</span>
+              <strong>126</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">Conversion</span>
+              <strong>3.8%</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">Returning users</span>
+              <strong>42%</strong>
+            </div>
+          </div>
+        </section>
+
+        <div class="admin-layout">
+          <section class="account-card account-surface">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">Catalog workflow</span>
+                <h2>Manage inventory from a dedicated product page</h2>
+              </div>
+            </div>
+            <p class="lead">Use the separate add-product page to create new inventory items, then return here to review analytics and saved products.</p>
+            <div class="hero-actions">
+              <a class="button" href="add-product.html">Go to Add Product</a>
+              <a class="button-ghost" href="inventory.html">Open Inventory</a>
+            </div>
+          </section>
+
+          <aside class="account-sidebar">
+            <div class="account-card account-surface">
+              <h3>Admin notes</h3>
+              <div class="account-mini-stack">
+                <div class="mini-card">
+                  <strong>Static mode</strong>
+                  <p class="muted">Products are stored in browser local storage for demo use.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Next upgrade</strong>
+                  <p class="muted">Connect this panel to PHP and MySQL on cPanel for real product management.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="account-card account-surface">
+              <h3>Quick actions</h3>
+              <div class="account-mini-stack">
+                <a class="pill-link" href="index.html">Preview homepage</a>
+                <a class="pill-link" href="product.html">Preview product page</a>
+                <button class="button-ghost admin-clear-button" type="button" data-admin-clear>Clear demo products</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

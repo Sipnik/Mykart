@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Settings</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link" href="admin.html#dashboard">Dashboard</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="banner.html">Banner</a>
+          <div class="admin-menu-group is-open" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle is-active" type="button" data-menu-trigger aria-expanded="true">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link is-active" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Store settings</span>
+          <strong>Control your brand details</strong>
+          <p class="muted">Manage store identity, support contact details, and admin preferences from one polished workspace.</p>
+          <a class="button" href="index.html">Preview Store</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar">
+          <div>
+            <span class="eyebrow">Settings</span>
+            <h1 class="page-title">Configure your store workspace.</h1>
+            <p class="lead">Update brand information, contact channels, and admin preferences that shape how your storefront feels.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button-ghost" href="admin.html">Back to Dashboard</a>
+          </div>
+        </header>
+
+        <section class="admin-stats">
+          <div class="account-stat-card">
+            <span class="muted">Store name</span>
+            <strong data-settings-store-name>Veloura</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Support email</span>
+            <strong data-settings-support-email>support@veloura.com</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Currency</span>
+            <strong data-settings-currency>USD</strong>
+          </div>
+          <div class="account-stat-card">
+            <span class="muted">Hero style</span>
+            <strong data-settings-hero-style>Editorial</strong>
+          </div>
+        </section>
+
+        <section class="account-card account-surface">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">My App</span>
+              <h2>Application health and release status</h2>
+            </div>
+          </div>
+          <div class="admin-stats">
+            <div class="account-stat-card">
+              <span class="muted">App status</span>
+              <strong data-app-status>Live</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">App version</span>
+              <strong data-app-current-version>v1.0.0</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">System status</span>
+              <strong data-app-system-status>Healthy</strong>
+            </div>
+            <div class="account-stat-card">
+              <span class="muted">Runtime mode</span>
+              <strong data-app-runtime-mode>cPanel Demo</strong>
+            </div>
+          </div>
+          <div class="settings-update-panel">
+            <div class="settings-update-copy">
+              <span class="eyebrow">App updates</span>
+              <h3>Keep your admin panel current</h3>
+              <p class="muted">Check whether a newer release is available and run the PHP updater directly from your cPanel-hosted app.</p>
+            </div>
+            <div class="settings-update-grid">
+              <div class="mini-card">
+                <strong>Installed version</strong>
+                <p class="muted" data-app-version-installed>v1.0.0</p>
+              </div>
+              <div class="mini-card">
+                <strong>Latest version</strong>
+                <p class="muted" data-app-version-latest>v1.1.0</p>
+              </div>
+              <div class="mini-card">
+                <strong>Update status</strong>
+                <p class="muted" data-app-update-status>Update available</p>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>GitHub manifest URL</label>
+              <input type="url" name="manifestUrl" data-app-manifest-url placeholder="https://raw.githubusercontent.com/your-user/your-repo/main/updates/remote-latest-version.json">
+            </div>
+            <div class="hero-actions">
+              <button class="button-ghost" type="button" data-app-check-update>Check for Updates</button>
+              <button class="button" type="button" data-app-run-update>Update App</button>
+              <button class="button-ghost" type="button" data-app-save-manifest>Save Manifest URL</button>
+            </div>
+            <p class="muted" data-app-update-message>The updater will use your configured version manifest and run pending database migrations during the update.</p>
+          </div>
+        </section>
+
+        <section class="settings-workspace">
+          <div class="settings-form-column">
+            <section class="account-card account-surface">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Brand settings</span>
+                  <h2>Store identity</h2>
+                </div>
+              </div>
+              <form class="form-grid" data-settings-form>
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Store name</label>
+                    <input type="text" name="storeName" placeholder="Veloura">
+                  </div>
+                  <div class="field-group">
+                    <label>Store tagline</label>
+                    <input type="text" name="tagline" placeholder="Modern luxury for everyday dressing.">
+                  </div>
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Support email</label>
+                    <input type="email" name="supportEmail" placeholder="support@veloura.com">
+                  </div>
+                  <div class="field-group">
+                    <label>Support phone</label>
+                    <input type="text" name="supportPhone" placeholder="+1 800 555 0147">
+                  </div>
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Currency</label>
+                    <select name="currency">
+                      <option value="USD">USD</option>
+                      <option value="INR">INR</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                    </select>
+                  </div>
+                  <div class="field-group">
+                    <label>Homepage hero style</label>
+                    <select name="heroStyle">
+                      <option value="Editorial">Editorial</option>
+                      <option value="Minimal">Minimal</option>
+                      <option value="Luxury">Luxury</option>
+                      <option value="Bold">Bold</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label>Store description</label>
+                  <input type="text" name="description" placeholder="Curated fashion, accessories, and premium essentials for modern wardrobes.">
+                </div>
+
+                <div class="hero-actions">
+                  <button class="button" type="submit">Save Settings</button>
+                  <button class="button-ghost" type="button" data-settings-reset>Reset Demo Settings</button>
+                </div>
+                <p class="muted" data-settings-message></p>
+              </form>
+            </section>
+
+            <section class="account-card account-surface">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Admin profile</span>
+                  <h2>Workspace owner details</h2>
+                </div>
+              </div>
+              <form class="form-grid" data-admin-profile-form>
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Admin name</label>
+                    <input type="text" name="adminName" placeholder="Manisha Sharma">
+                  </div>
+                  <div class="field-group">
+                    <label>Admin email</label>
+                    <input type="email" name="adminEmail" placeholder="admin@veloura.com">
+                  </div>
+                </div>
+
+                <div class="checkout-grid">
+                  <div class="field-group">
+                    <label>Role title</label>
+                    <input type="text" name="roleTitle" placeholder="Administrator">
+                  </div>
+                  <div class="field-group">
+                    <label>Notification preference</label>
+                    <select name="notifications">
+                      <option value="Enabled">Enabled</option>
+                      <option value="Only Important">Only Important</option>
+                      <option value="Muted">Muted</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label>Upload profile picture</label>
+                  <input type="file" name="adminAvatarFile" accept="image/*">
+                </div>
+
+                <div class="hero-actions">
+                  <button class="button" type="submit">Save Profile</button>
+                </div>
+                <p class="muted" data-admin-profile-message></p>
+              </form>
+            </section>
+          </div>
+
+          <aside class="settings-preview-column">
+            <section class="settings-preview-card">
+              <span class="eyebrow">Live summary</span>
+              <h2 data-settings-preview-name>Veloura</h2>
+              <p class="lead" data-settings-preview-tagline>Modern luxury for everyday dressing.</p>
+              <div class="settings-preview-grid">
+                <div class="mini-card">
+                  <strong>Support</strong>
+                  <p class="muted" data-settings-preview-email>support@veloura.com</p>
+                  <p class="muted" data-settings-preview-phone>+1 800 555 0147</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Experience</strong>
+                  <p class="muted">Currency: <span data-settings-preview-currency>USD</span></p>
+                  <p class="muted">Hero style: <span data-settings-preview-hero>Editorial</span></p>
+                </div>
+              </div>
+              <div class="mini-card settings-preview-description">
+                <strong>Store story</strong>
+                <p class="muted" data-settings-preview-description>Curated fashion, accessories, and premium essentials for modern wardrobes.</p>
+              </div>
+            </section>
+
+            <section class="account-card account-surface">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Admin snapshot</span>
+                  <h2>Profile preview</h2>
+                </div>
+              </div>
+              <div class="account-mini-stack">
+                <div class="mini-card">
+                  <img class="avatar" data-admin-preview-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin preview avatar">
+                  <strong data-admin-preview-name>Manisha Sharma</strong>
+                  <p class="muted" data-admin-preview-role>Administrator</p>
+                  <p class="muted" data-admin-preview-email>admin@veloura.com</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Notifications</strong>
+                  <p class="muted" data-admin-preview-notifications>Enabled</p>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

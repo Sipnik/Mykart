@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Modern Ecommerce Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura</strong>
+            <span>Curated essentials for elevated living</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a class="is-active" href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <form class="header-search" action="#" method="get" data-live-search>
+          <input type="search" placeholder="Search products" data-search-input autocomplete="off">
+          <button type="submit">Search</button>
+          <div class="search-results" data-search-results hidden></div>
+        </form>
+        <div class="nav-actions">
+          <a class="pill-link" href="cart.html">Cart (2)</a>
+          <a class="button" href="checkout.html">Shop Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-fullbleed">
+          <div class="hero-slider" data-slider>
+            <article class="hero-slide is-active" data-slide>
+              <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1600&q=80" alt="Fashion banner">
+              <div class="hero-slide-content">
+                <div class="hero-slide-card hero-slide-card-clean">
+                  <span class="hero-kicker">New season collection</span>
+                  <h1>Luxury basics with a calm, modern attitude.</h1>
+                  <p>Cleaner visuals, softer overlays, and stronger typography for a more premium first impression.</p>
+                  <div class="hero-actions">
+                    <a class="button" href="product.html">Shop Collection</a>
+                    <a class="button-ghost" href="account.html">View Account</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="hero-slide" data-slide>
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=80" alt="Editorial banner">
+              <div class="hero-slide-content">
+                <div class="hero-slide-card hero-slide-card-clean">
+                  <span class="hero-kicker">Editorial storefront</span>
+                  <h1>Beautiful campaigns that turn attention into clicks.</h1>
+                  <p>Use this hero for promotions, featured categories, and seasonal moments without making the page feel crowded.</p>
+                  <div class="hero-actions">
+                    <a class="button" href="cart.html">See Offers</a>
+                    <a class="button-ghost" href="checkout.html">Checkout Flow</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="hero-slide" data-slide>
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80" alt="Boutique banner">
+              <div class="hero-slide-content">
+                <div class="hero-slide-card hero-slide-card-clean">
+                  <span class="hero-kicker">cPanel ready</span>
+                  <h1>Launch fast with a polished storefront look.</h1>
+                  <p>A lighter hero treatment keeps the homepage elegant while staying practical for static deployment.</p>
+                  <div class="hero-actions">
+                    <a class="button" href="product.html">Featured Product</a>
+                    <a class="button-ghost" href="account.html">Customer Area</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="slider-controls">
+              <div class="slider-progress">
+                <div class="slider-dots">
+                  <button class="slider-dot is-active" type="button" data-dot="0" aria-label="Go to slide 1"></button>
+                  <button class="slider-dot" type="button" data-dot="1" aria-label="Go to slide 2"></button>
+                  <button class="slider-dot" type="button" data-dot="2" aria-label="Go to slide 3"></button>
+                </div>
+                <div class="slider-meta">
+                  <span class="slider-caption">Curated premium essentials</span>
+                  <span class="slider-count"><span data-slide-current>01</span> / 03</span>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-arrow" type="button" data-prev aria-label="Previous slide">&#8249;</button>
+                <button class="slider-arrow" type="button" data-next aria-label="Next slide">&#8250;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="hero-metrics hero-metrics-lift">
+            <div class="metric-card">
+              <strong>1.2k+</strong>
+              <span class="muted">Orders shipped this month</span>
+            </div>
+            <div class="metric-card">
+              <strong>48h</strong>
+              <span class="muted">Express delivery promise</span>
+            </div>
+            <div class="metric-card">
+              <strong>4.9/5</strong>
+              <span class="muted">Average customer rating</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <div class="editorial-strip">
+            <div class="editorial-copy">
+              <span class="eyebrow">Curated for modern brands</span>
+              <h2 class="page-title">A homepage that feels like a luxury campaign.</h2>
+              <p class="lead">The layout combines edge-to-edge storytelling, soft editorial cards, and product-first sections so your store looks polished before you even add a backend.</p>
+            </div>
+            <div class="editorial-stats">
+              <div class="mini-card">
+                <strong>Minimal build</strong>
+                <p class="muted">Static HTML, CSS, and JS for cPanel simplicity.</p>
+              </div>
+              <div class="mini-card">
+                <strong>Mobile refined</strong>
+                <p class="muted">Strong visual rhythm from desktop to phone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">
+              <span class="eyebrow">Shop by mood</span>
+              <h2>Signature categories</h2>
+            </div>
+            <p class="lead">A homepage layout that helps your best products stand out immediately.</p>
+          </div>
+
+          <div class="section-grid">
+            <article class="category-card modern-card">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Women collection">
+              <div class="category-card-body">
+                <div class="product-meta">
+                  <h3>Women</h3>
+                  <span class="tag">24 items</span>
+                </div>
+                <p class="muted">Fluid dresses, fine tailoring, and pieces that move with elegance.</p>
+              </div>
+            </article>
+
+            <article class="category-card modern-card">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Men collection">
+              <div class="category-card-body">
+                <div class="product-meta">
+                  <h3>Men</h3>
+                  <span class="tag">18 items</span>
+                </div>
+                <p class="muted">Soft knits, sharp layers, and elevated essentials built for repeat wear.</p>
+              </div>
+            </article>
+
+            <article class="category-card modern-card">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Accessories collection">
+              <div class="category-card-body">
+                <div class="product-meta">
+                  <h3>Accessories</h3>
+                  <span class="tag">12 items</span>
+                </div>
+                <p class="muted">Bags, footwear, and finishing details that give the whole store character.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="showcase-panel">
+            <div class="showcase-copy">
+              <span class="eyebrow">Trending now</span>
+              <h2 class="page-title">Statement pieces with a calmer luxury mood.</h2>
+              <p class="lead">Bring focus to a seasonal promotion, a hero collection, or your strongest value proposition with a bold split layout that breaks the grid in a more modern way.</p>
+              <div class="hero-actions">
+                <a class="button" href="product.html">Shop the Edit</a>
+                <a class="button-ghost" href="cart.html">View Bag</a>
+              </div>
+            </div>
+            <div class="showcase-stack">
+              <article class="showcase-card tall">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80" alt="Featured campaign">
+                <div class="showcase-overlay">
+                  <span class="tag">Campaign</span>
+                  <strong>Modern Resort Line</strong>
+                </div>
+              </article>
+              <article class="showcase-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Accessories collection">
+                <div class="showcase-overlay">
+                  <span class="tag">Accessories</span>
+                  <strong>Polished essentials</strong>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container story-grid">
+          <div class="content-card">
+            <span class="eyebrow">Brand story</span>
+            <h2 class="page-title">Designed to feel editorial, not generic.</h2>
+            <p class="lead">This storefront uses bold headlines, layered spacing, and soft glass surfaces to create a premium identity. It works as a lightweight static site, which makes deployment to cPanel simple.</p>
+            <div class="mini-grid">
+              <div class="mini-card">
+                <strong>Static pages</strong>
+                <p class="muted">No build step required for upload.</p>
+              </div>
+              <div class="mini-card">
+                <strong>Responsive</strong>
+                <p class="muted">Optimized for mobile and desktop.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80" alt="Lifestyle fashion">
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">
+              <span class="eyebrow">Best sellers</span>
+              <h2>Ready to convert</h2>
+            </div>
+            <a class="button-ghost" href="product.html">Open product page</a>
+          </div>
+
+          <div class="home-product-grid">
+            <article class="product-card modern-card" data-card-link="product.html" data-product-name="Arc Leather Tote" data-product-price="$124" data-product-old-price="$156" data-product-rating="4.9" data-product-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" data-product-tag="Top pick">
+              <button class="quick-view-trigger" type="button" data-quick-view>Quick View</button>
+              <div class="product-card-media">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Leather bag" data-main-product-image>
+                <span class="tag product-image-tag">Top pick</span>
+                <div class="product-rating-badge">
+                  <span class="rating-star">★</span>
+                  <span>4.9</span>
+                </div>
+                <div class="product-image-thumbs">
+                  <img class="thumb-dot is-active" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Arc Leather Tote view 1">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Arc Leather Tote view 2">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" alt="Arc Leather Tote view 3">
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-meta">
+                  <h3>Arc Leather Tote</h3>
+                  <div class="price-stack">
+                    <span class="price">$124</span>
+                    <span class="old-price">$156</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card modern-card" data-card-link="product.html" data-product-name="Contour Wool Coat" data-product-price="$188" data-product-old-price="$230" data-product-rating="4.8" data-product-image="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" data-product-tag="New edit">
+              <button class="quick-view-trigger" type="button" data-quick-view>Quick View</button>
+              <div class="product-card-media">
+                <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" alt="Minimal coat" data-main-product-image>
+                <span class="tag product-image-tag">New edit</span>
+                <div class="product-rating-badge">
+                  <span class="rating-star">★</span>
+                  <span>4.8</span>
+                </div>
+                <div class="product-image-thumbs">
+                  <img class="thumb-dot is-active" src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" alt="Contour Wool Coat view 1">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Contour Wool Coat view 2">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Contour Wool Coat view 3">
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-meta">
+                  <h3>Contour Wool Coat</h3>
+                  <div class="price-stack">
+                    <span class="price">$188</span>
+                    <span class="old-price">$230</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card modern-card" data-card-link="product.html" data-product-name="Cloudline Sneaker" data-product-price="$96" data-product-old-price="$122" data-product-rating="4.7" data-product-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" data-product-tag="Daily wear">
+              <button class="quick-view-trigger" type="button" data-quick-view>Quick View</button>
+              <div class="product-card-media">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Sneakers" data-main-product-image>
+                <span class="tag product-image-tag">Daily wear</span>
+                <div class="product-rating-badge">
+                  <span class="rating-star">★</span>
+                  <span>4.7</span>
+                </div>
+                <div class="product-image-thumbs">
+                  <img class="thumb-dot is-active" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Cloudline Sneaker view 1">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Cloudline Sneaker view 2">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Cloudline Sneaker view 3">
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-meta">
+                  <h3>Cloudline Sneaker</h3>
+                  <div class="price-stack">
+                    <span class="price">$96</span>
+                    <span class="old-price">$122</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card modern-card" data-card-link="product.html" data-product-name="Slate Dial Watch" data-product-price="$142" data-product-old-price="$175" data-product-rating="4.8" data-product-image="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" data-product-tag="Classic">
+              <button class="quick-view-trigger" type="button" data-quick-view>Quick View</button>
+              <div class="product-card-media">
+                <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Classic watch" data-main-product-image>
+                <span class="tag product-image-tag">Classic</span>
+                <div class="product-rating-badge">
+                  <span class="rating-star">★</span>
+                  <span>4.8</span>
+                </div>
+                <div class="product-image-thumbs">
+                  <img class="thumb-dot is-active" src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Slate Dial Watch view 1">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Slate Dial Watch view 2">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Slate Dial Watch view 3">
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-meta">
+                  <h3>Slate Dial Watch</h3>
+                  <div class="price-stack">
+                    <span class="price">$142</span>
+                    <span class="old-price">$175</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card modern-card" data-card-link="product.html" data-product-name="Merino Lounge Knit" data-product-price="$118" data-product-old-price="$149" data-product-rating="4.9" data-product-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" data-product-tag="Soft knit">
+              <button class="quick-view-trigger" type="button" data-quick-view>Quick View</button>
+              <div class="product-card-media">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Soft knitwear" data-main-product-image>
+                <span class="tag product-image-tag">Soft knit</span>
+                <div class="product-rating-badge">
+                  <span class="rating-star">★</span>
+                  <span>4.9</span>
+                </div>
+                <div class="product-image-thumbs">
+                  <img class="thumb-dot is-active" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Merino Lounge Knit view 1">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Merino Lounge Knit view 2">
+                  <img class="thumb-dot" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=120&q=80" data-product-thumb data-full-image="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Merino Lounge Knit view 3">
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-meta">
+                  <h3>Merino Lounge Knit</h3>
+                  <div class="price-stack">
+                    <span class="price">$118</span>
+                    <span class="old-price">$149</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="newsletter-panel">
+            <div>
+              <span class="eyebrow">Stay inspired</span>
+              <h2 class="page-title">Get new drops, seasonal offers, and style edits first.</h2>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email">
+              <button class="button" type="submit">Join the List</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="quick-view-modal" data-quick-view-modal hidden>
+      <div class="quick-view-backdrop" data-quick-view-close></div>
+      <div class="quick-view-dialog">
+        <button class="quick-view-close" type="button" data-quick-view-close aria-label="Close quick view">&times;</button>
+        <div class="quick-view-grid">
+          <div class="quick-view-image-wrap">
+            <img src="" alt="" data-quick-view-image>
+          </div>
+          <div class="quick-view-content">
+            <span class="tag" data-quick-view-tag></span>
+            <div class="quick-view-rating">
+              <span class="rating-star">&#9733;</span>
+              <span data-quick-view-rating></span>
+            </div>
+            <h2 data-quick-view-name></h2>
+            <div class="quick-view-price">
+              <span class="price" data-quick-view-price></span>
+              <span class="old-price" data-quick-view-old-price></span>
+            </div>
+            <p class="muted">A refined, ready-to-ship product preview designed to help shoppers decide faster without leaving the homepage.</p>
+            <div class="hero-actions">
+              <a class="button" href="product.html">View Full Product</a>
+              <a class="button-ghost" href="cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-card">
+        <div>
+          <strong>Veloura</strong>
+          <p class="muted">Upload these files to your cPanel public_html folder to go live.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="account.html">Account</a>
+          <span>&copy; <span data-year></span></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

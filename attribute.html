@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura | Attributes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-shell admin-shell">
+    <main class="admin-panel container">
+      <aside class="admin-sidebar">
+        <a class="brand admin-brand" href="index.html">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>Veloura Admin</strong>
+            <span>Store management workspace</span>
+          </span>
+        </a>
+
+        <div class="admin-profile">
+          <img class="avatar" data-admin-avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Admin avatar">
+          <div>
+            <strong>Manisha Sharma</strong>
+            <p class="muted">Administrator</p>
+          </div>
+        </div>
+
+        <nav class="admin-menu">
+          <a class="admin-menu-link" href="admin.html#dashboard">Dashboard</a>
+          <div class="admin-menu-group is-open" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle is-active" type="button" data-menu-trigger aria-expanded="true">Product</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="add-product.html">Add Product</a>
+              <a class="admin-submenu-link is-active" href="attribute.html">Attributes</a>
+              <a class="admin-submenu-link" href="categories.html">Category</a>
+              <a class="admin-submenu-link" href="inventory.html">Inventory</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="banner.html">Banner</a>
+          <div class="admin-menu-group" data-menu-group>
+            <button class="admin-menu-link admin-menu-toggle" type="button" data-menu-trigger aria-expanded="false">Settings</button>
+            <div class="admin-submenu" data-menu-panel>
+              <a class="admin-submenu-link" href="settings.html">My App</a>
+            </div>
+          </div>
+          <a class="admin-menu-link" href="index.html">Storefront</a>
+          <a class="admin-menu-link" href="account.html">Customer Area</a>
+        </nav>
+
+        <div class="admin-sidebar-card">
+          <span class="eyebrow">Preset library</span>
+          <strong>Build reusable options</strong>
+          <p class="muted">Create preset sizes, colors, brands, and general attributes once, then reuse them in products later.</p>
+          <a class="button" href="add-product.html">Go to Add Product</a>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <header class="admin-topbar">
+          <div>
+            <span class="eyebrow">Attributes manager</span>
+            <h1 class="page-title">Organize reusable product attributes.</h1>
+            <p class="lead">Keep all reusable presets in one place so your product creation flow stays consistent, faster, and easier to manage.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <a class="button-ghost" href="admin.html">Back to Dashboard</a>
+          </div>
+        </header>
+
+        <section class="attributes-workspace">
+          <div class="attributes-create-column">
+            <section class="variation-summary-card">
+              <span class="eyebrow">Create attributes</span>
+              <h2 class="attributes-section-title">Create and manage your preset options.</h2>
+              <p class="lead">Add reusable attribute values for product setup. These can later be reused across your catalog workflow.</p>
+            </section>
+
+            <section class="variation-summary-card">
+              <span class="eyebrow">Feature guide</span>
+              <div class="variation-guide-list">
+                <div class="mini-card">
+                  <strong>Attributes</strong>
+                  <p class="muted">Use for material, edition, finish, or collection-specific options.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Size, Color, Brand</strong>
+                  <p class="muted">Keep your most common catalog attributes structured and reusable.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="variation-summary-card">
+              <span class="eyebrow">Quick create</span>
+              <div class="attributes-action-grid">
+                <button class="button-ghost variation-add-button" type="button" data-preset-add="variation">Add Attribute</button>
+                <button class="button-ghost variation-add-button" type="button" data-preset-add="size">Add Size</button>
+                <button class="button-ghost variation-add-button" type="button" data-preset-add="color">Add Color</button>
+                <button class="button-ghost variation-add-button" type="button" data-preset-add="brand">Add Brand</button>
+              </div>
+            </section>
+          </div>
+
+          <div class="attributes-results-column">
+            <section class="variation-summary-card">
+              <span class="eyebrow">Preset totals</span>
+              <div class="admin-stats variation-stats-compact">
+                <div class="account-stat-card">
+                  <span class="muted">Attribute presets</span>
+                  <strong data-preset-count="variation">0</strong>
+                </div>
+                <div class="account-stat-card">
+                  <span class="muted">Sizes</span>
+                  <strong data-preset-count="size">0</strong>
+                </div>
+                <div class="account-stat-card">
+                  <span class="muted">Colors</span>
+                  <strong data-preset-count="color">0</strong>
+                </div>
+                <div class="account-stat-card">
+                  <span class="muted">Brands</span>
+                  <strong data-preset-count="brand">0</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="variation-results-stack">
+              <section class="account-card account-surface variation-preset-card" data-preset-section="variation">
+                <div class="row-between">
+                  <div>
+                    <span class="eyebrow">Generic attributes</span>
+                    <h2>Created attributes</h2>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-preset-add="variation">Add Attribute</button>
+                </div>
+                <div class="preset-list" data-preset-list="variation"></div>
+              </section>
+
+              <section class="account-card account-surface variation-preset-card" data-preset-section="size">
+                <div class="row-between">
+                  <div>
+                    <span class="eyebrow">Size library</span>
+                    <h2>Created sizes</h2>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-preset-add="size">Add Size</button>
+                </div>
+                <div class="preset-list" data-preset-list="size"></div>
+              </section>
+
+              <section class="account-card account-surface variation-preset-card" data-preset-section="color">
+                <div class="row-between">
+                  <div>
+                    <span class="eyebrow">Color library</span>
+                    <h2>Created colors</h2>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-preset-add="color">Add Color</button>
+                </div>
+                <div class="preset-list" data-preset-list="color"></div>
+              </section>
+
+              <section class="account-card account-surface variation-preset-card" data-preset-section="brand">
+                <div class="row-between">
+                  <div>
+                    <span class="eyebrow">Brand library</span>
+                    <h2>Created brands</h2>
+                  </div>
+                  <button class="button-ghost variation-add-button" type="button" data-preset-add="brand">Add Brand</button>
+                </div>
+                <div class="preset-list" data-preset-list="brand"></div>
+              </section>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="preset-modal" data-preset-modal hidden>
+      <div class="preset-modal-backdrop" data-preset-close></div>
+      <div class="preset-modal-dialog">
+        <button class="preset-modal-close" type="button" data-preset-close aria-label="Close">&times;</button>
+        <div class="preset-modal-head">
+          <span class="eyebrow" data-preset-modal-kicker>Attributes</span>
+          <h2 data-preset-modal-title>Add preset</h2>
+          <p class="lead" data-preset-modal-copy>Create a reusable preset for your catalog.</p>
+        </div>
+        <form class="form-grid" data-preset-form>
+          <input type="hidden" name="type" data-preset-form-type>
+          <div class="field-group">
+            <label data-preset-value-label>Value</label>
+            <input type="text" name="value" data-preset-value-input placeholder="Enter value" required>
+          </div>
+          <div class="field-group" data-preset-color-group hidden>
+            <label>Color</label>
+            <input type="color" name="color" value="#b9612e">
+          </div>
+          <div class="field-group">
+            <label data-preset-stock-label>Stock</label>
+            <input type="text" name="stock" data-preset-stock-input placeholder="12">
+          </div>
+          <div class="hero-actions">
+            <button class="button" type="submit">Save Preset</button>
+            <button class="button-ghost" type="button" data-preset-close>Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
